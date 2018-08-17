@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>熊猫TV</title>
+		<link href="css/style.css" rel="stylesheet" />
+		<script src='js/javascript.js' style='text/javascript'>
+		</script>
+	</head>
+	<body>
+		<div class="menu">
+			<ul>
+				<li>
+					<a href="#">菜单</a>
+				</li>
+				<li>
+					<a href="#">网站首页</a>
+				</li>
+				<li>
+					<a href="page/熊猫咆哮.html">熊猫咆哮</a>
+				</li>
+				<li>
+					<a href="page/熊猫打坐.html">熊猫打坐</a>
+				</li>
+				<li>
+					<a href="page/熊猫视频.html">熊猫视频</a>
+				</li>
+			</ul>
+		</div>
+		<div class="eyes">
+			<img src="img/熊猫体.jpg" />
+			<img src="img/眼.gif" />
+		</div>
+		<div class="login">
+			<p><img src='img/熊猫直播.png' /></p>
+			<form method='post' action="page/熊猫咆哮.html" onsubmit="return checkfom(this)" >
+				<p>
+					<label for='account'>账号:</label>
+					<input id='account' maxlength='20' type='text' placeholder='请输入您的账号' autofocus='autofocus' />
+				</p>
+				<p>
+					<label for='pass'>密码:</label>
+					<input id='pass' type='password' placeholder='请输入您的密码' />
+				</p>
+				<p class='loginbutton'>
+					<input type='submit' value='登录'  />
+					<input type='button' value='注册' onclick="alert1('还不能注册')" />
+				</p>
+				<p class='anotherlogin'>
+					<a href='#'><img src="img/QQ.png" /><img src='img/QQvip.png'></a>
+					<a href='#'><img src="img/微信.png" /></a>
+					<a href='#'><img src="img/朋友圈.png" /></a>
+				</p>
+			</form>
+		</div>
+		<div class='bamboo'>
+			<a href='#'>
+				<img src='img/竹子.png' />
+				<img id='img1' class='leaf' src='img/竹叶1.png' />
+				<img id='img1' class='leaf' src='img/竹叶2.png' />
+			</a>
+		</div>
+		<div class='roar'>
+			<a href='#'>
+				<img src='img/咆哮.png' />
+				<div>
+					<textarea placeholder="对我们说点什么吧！"></textarea>
+					<input type='submit' value='发送' />
+				</div>
+			</a>
+		</div>
+	</body>
+</html>

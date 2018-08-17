@@ -1,0 +1,414 @@
+body{
+	width:100%;
+	height:100%;
+	background-image:url("../img/菜单背景图片.png");
+	background-color:green;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:100%;
+}
+.clear:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+.menu{
+	z-index:2;
+	padding:50px;
+}
+.menu>ul{
+	padding:0px;
+	list-style-type:none;
+}
+.menu>ul>li>a{
+	font-size:30px;
+	color:white;
+	text-decoration:none;
+}
+.menu>ul>li{
+	padding-right:50px;
+	float:left;
+}
+.menu>ul>li:nth-of-type(1)~li{
+	display:none;
+}
+.menu>ul:hover>li:nth-of-type(1)~li{
+	display:block;
+}
+.eyes{
+	position:relative;
+}
+.eyes>img:nth-of-type(2){
+	position:absolute;
+	top:295px;
+	left:325px;
+}
+.login{
+	background:rgba(255,255,255,0.5);
+	position:absolute;
+	display:inline-block;
+	padding:100px;
+	top:500px;
+	right:500px;
+	z-index:1;
+}
+.login>form>p{
+	text-align:center;
+}
+.login>form>p img{
+	margin: 0px 10px;
+	width:55px;
+	height:55px;
+}
+.login>form>p{
+	vertical-align:center;
+}
+.login>form>p>label{
+	padding:5px;
+	margin-right:0px;
+	background-color:rgba(255,255,255,0.6);
+	border-radius:10px;
+}
+.login>form>p>input[type='text']{
+	line-height:25px;
+	font-weight:bold;
+	color:white;
+	background:rgba(66,255,66,0.1);
+	border-radius:5px;
+}
+.login>form>p>input[type='password']{
+	line-height:25px;
+	border-radius:5px;
+	color:#ffffff;
+	font-weight:bold;
+	background:rgba(88,88,255,0.5);
+}
+.loginbutton>input{
+	margin-left:0px;
+	padding:5px;
+	color:#986b0d;
+	border:#fad65c solid 1px;
+	width:70px;
+	border-radius:20px;
+}
+
+.loginbutton>input[type='submit']:hover{
+	background-color:#fad65c;
+}
+.loginbutton>input[type='submit']{
+	background:none;
+}
+.loginbutton>input[type='button']{
+	margin-left:20px;
+	background-color:#fad65c;
+}
+.loginbutton>input[type='button']:hover{
+	font-weight:bold;
+	color:black;
+}
+.bamboo{
+	position:absolute;
+	top:0px;
+	right:0px;
+}
+.leaf{
+	position:absolute;
+	top:200px;
+	right:200px;
+}
+/*竹子*/
+.bamboo>a:hover img:nth-of-type(1){
+	transition:ease 0.5s alternate;
+	transform:translate(10px,2px);
+}
+/*2-7竹叶*/
+@keyframes img1{
+	0%{
+		top:250px;
+		right:250px;
+		transform:rotate(-90deg);
+	}
+	20%{
+		top:650px;
+		right:150px;
+		transform:rotate(90deg);
+	}
+	40%{
+		top:610px;
+		right:50px;
+		transform:rotate(-90deg);
+	}
+	60%{
+		top:670px;
+		right:100px;
+		transform:rotate(80deg);
+	}
+	80%{
+		top:750px;
+		right:240px;
+		transform:rotate(-10deg);
+	}
+	100%{
+		top:800px;
+		right:350px;
+		transform:rotate(-180deg);
+	}
+}
+@keyframes img2{
+	0%{
+		top:250px;
+		left:250px;
+		transform:rotate(-130deg);
+	}
+	10%{
+		top:350px;
+		left:200px;
+		transform:rotate(100deg);
+	}
+	20%{
+		top:450px;
+		left:150px;
+		transform:rotate(115deg);
+	}
+	30%{
+		top:500px;
+		left:100px;
+		transform:rotate(95deg);
+	}
+	40%{
+		top:650px;
+		left:50px;
+		transform:rotate(110deg);
+	}
+	50%{
+		top:700px;
+		left:100px;
+		transform:rotate(-50deg);
+	}
+	55%{
+		top:780px;
+		left:120px;
+		transform:rotate(-50deg);
+	}
+	60%{
+		top:850px;
+		left:150px;
+		transform:rotate(85deg);
+	}
+	70%{
+		top:900px;
+		left:200px;
+		transform:rotate(45deg);
+	}
+	80%{
+		top:950px;
+		left:250px;
+		transform:rotate(83deg);
+	}
+	90%{
+		top:960px;
+		left:300px;
+		transform:rotate(66deg);
+	}
+	100%{
+		top:1000px;
+		left:350px;
+		transform:rotate(77deg);
+	}
+}
+.bamboo>a img:nth-of-type(2){
+	animation:img1 5s normal infinite;
+}
+.bamboo>a img:nth-of-type(3){
+	animation:img2 6s normal infinite;
+}
+.anotherlogin>a:nth-of-type(1) img:nth-of-type(1){
+	
+}
+.anotherlogin>a:nth-of-type(1):hover img:nth-of-type(1){
+	display:none;
+}
+.anotherlogin>a:nth-of-type(1) img:nth-of-type(2){
+	display:none;
+}
+@keyframes qqvip{
+	0%{
+		opacity:0;
+	}
+	10%{
+		opacity:0.1;
+	}
+	20%{
+		opacity:0.2;
+	}
+	30%{
+		opacity:0.3;
+	}
+	40%{
+		opacity:0.4;
+	}
+	50%{
+		opacity:0.5;
+	}
+	60%{
+		opacity:0.6;
+	}
+	70%{
+		opacity:0.7;
+	}
+	80%{
+		opacity:0.8;
+	}
+	90%{
+		opacity:0.9;
+	}
+	100%{
+		opacity:1;
+	}
+}
+.anotherlogin>a:nth-of-type(1):hover img:nth-of-type(2){
+	display:inline-block;
+	opacity:1;
+	animation:qqvip 2s ;
+}
+.anotherlogin>a:nth-of-type(1):hover img{
+	background-image:url('../img/QQvip.png');
+}
+.anotherlogin>a:nth-of-type(3):hover img{
+	transition:all 20s ease-out;
+	transform:rotate(3600deg) ;
+}
+.roar{
+	top:200px;
+	position:fixed;
+	z-index:1;
+}
+.roar>a{
+	text-decoration:none;
+}
+.roar>a>div{
+	position:relative;
+	display:none;
+	top:-100px;
+	left:100px;
+}
+.roar>a>div>input{
+	position:relative;
+	display:block;
+	background-color:yellow;
+}
+.roar:hover>a>div{
+	display:block;
+}
+.roar>a:nth-of-type(1) img{
+	width:100px;
+	height:100px;
+}
+.mainleft{
+	display:inline-block;
+	border:green 1px solid;
+	position:fixed;
+}
+.roarhead>h1{
+	display:inline-block;
+	line-height:2em;
+	color:black;
+	background-image:url('../img/竹片.jpg');
+	background-size:cover;
+	border:green solid;
+	padding-left:50px;
+	padding-right:50px;
+	border-radius:50px;
+}
+.leftpage{
+	color:white;
+	padding:20px;
+	text-align:center;
+	width:230px;
+	background:#191b2e;
+}
+.leftpage a{
+	color:white;
+	text-decoration:none;
+}
+.leftpage>div{
+	padding:10px;
+}
+.mainright{
+	border:green 1px solid;
+	position:absolute;
+	top:10px;
+	left:300px;
+}
+.rightpage>ul{
+	list-style-type:none;
+}
+#ulcontent>li>img{
+	width:300px;
+	height:200px;
+}
+#ulcontent>li{
+	background-color:rgba(255,255,255,0.8);
+	margin:20px;
+	float:left;
+}
+#ulcontent>li:hover{
+	box-shadow:0px 0px 10px 10px #ffffff;
+}
+#ulcontent>li>div>p:nth-of-type(1){
+	font-weight:bold;
+	text-indent:2em;
+}
+#ulcontent>li>div>p:nth-of-type(2)>span:nth-of-type(1){
+	margin-left:20px;
+	padding: 10px 20px;
+	border:green solid 1px;
+	color:green;
+	display:inline-block;
+	background-color:rgba(0,255,0,0.2);
+	border-radius:30px;
+}
+#ulcontent>li>div>p:nth-of-type(2)>span:nth-of-type(2){
+	padding: 10px 20px;
+	border:blue solid 1px;
+	margin-left:30px;
+	display:inline-block;
+	color:blue;
+	background-color:rgba(0,0,255,0.2);
+	border-radius:30px;
+}
+.returnblock{
+	position:fixed;
+	right:-200px;
+	bottom:-200px;
+	display:inline-block;
+}
+.returnblock:hover{
+	right:-50px;
+	animation:totop 3s ease-in-out;
+}
+.returnblock>a>span{
+	position:absolute;
+	border-radius:50px;
+	color:black;
+	font-size:bold;
+	left:-50px;
+	top:50px;
+	display:inline-block;
+	padding:5px 25px;
+	background-color:rgba(0,255,0,0.8);
+}
+@keyframes totop{
+	0%{
+		right:-200px;
+	}
+	100%{
+		right:-50px;
+	}
+}
+.play{
+	padding:20px;
+	text-align:center;
+	border-radius:50px;
+	background-color:rgba(0,255,0,0.5);
+}
